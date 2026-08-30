@@ -1,0 +1,14 @@
+Put your 3D anatomy model here as:
+    human_anatomy.glb
+
+Requirements for tap-to-identify parts to work:
+- Format: .glb (glTF binary)
+- Individual organs/systems should be SEPARATE named meshes/nodes
+  inside the file, with names containing one of these ids
+  (case-insensitive, partial match is fine):
+      brain, heart, lungs, skeletal, stomach, kidneys, muscles, nervous
+  e.g. a mesh named "Heart_mesh" or "HumanHeart" will match id "heart".
+
+Once you add the real human_anatomy.glb file here, delete this
+placeholder .txt file — it is not a valid model and is only here
+so the assets/models folder isn't empty in the zip.

@@ -1,0 +1,52 @@
+ANATOMITY 2D ANATOMY — ZOOMABLE DETAILED HOTSPOTS
+
+Organ-system images included:
+- Respiratory
+- Circulatory
+- Digestive
+- Endocrine
+- Urinary
+- Nervous
+- Skeletal
+- Muscular
+- Lymphatic
+- Integumentary
+
+What changed in this revision:
+1. Pinch-to-zoom was added to every 2D anatomy image (100% to 500%).
+2. When zoomed in, drag the image to pan around it.
+3. - / RESET / + controls were added as an alternative to gestures.
+4. Glowing marker visuals automatically become smaller as zoom increases, so dense structures do not cover each other.
+5. Detailed markers are progressive: major structures appear at 100%, while smaller structures appear only at higher zoom levels.
+6. The screen shows how many markers are currently visible and the next zoom level that reveals more detail.
+7. Body-part information still stays hidden until a marker is tapped.
+8. Switching organ systems resets the selected body part and the zoom state.
+
+Expanded anatomy data:
+- Respiratory: 12 parts
+- Circulatory: 14 parts
+- Digestive: 13 parts
+- Endocrine: 9 parts
+- Urinary: 10 parts
+- Nervous: 9 parts
+- Skeletal: 29 parts
+- Muscular: 16 parts
+- Lymphatic: 8 parts
+- Integumentary: 11 parts
+TOTAL: 131 clickable anatomy parts
+
+Examples of detailed skeletal structures now included:
+Cranium, nasal bone, zygomatic bone, maxilla, mandible, cervical vertebrae,
+clavicle, scapula, sternum, ribs, thoracic vertebrae, humerus, lumbar vertebrae,
+radius, ulna, carpals, metacarpals, hand phalanges, ilium, sacrum, pubis,
+ischium, femur, patella, tibia, fibula, tarsals, metatarsals, and foot phalanges.
+
+Implementation notes:
+- Images are stored in app/src/main/res/drawable-nodpi/.
+- Hotspot positions are normalized values from 0.0 to 1.0.
+- Each AnatomyPart has a minZoom value that controls when a fine-detail marker appears.
+- Hotspot definitions and the zoom/pan UI are in MainActivity.kt.
+- The 3D page remains a placeholder because no 3D model asset has been supplied yet.
+
+Build note:
+The project keeps its existing Gradle 9.5 wrapper. A full Android Gradle build cannot be run in this packaging environment because the Gradle distribution/dependencies are not locally cached and services.gradle.org is unavailable here. Android Studio can resolve them when internet access is available.
