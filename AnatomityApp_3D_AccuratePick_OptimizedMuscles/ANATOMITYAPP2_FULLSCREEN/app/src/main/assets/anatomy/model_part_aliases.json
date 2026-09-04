@@ -1,0 +1,23 @@
+{
+  "respiratory": {
+    "left_lung": "Left Lung",
+    "right_lung": "Right Lung",
+    "trachea_mesh": "Trachea"
+  },
+  "circulatory": {
+    "heart_mesh": "Heart",
+    "aorta_mesh": "Aorta"
+  },
+  "digestive": {},
+  "endocrine": {},
+  "urinary": {
+    "left_kidney": "Left Kidney",
+    "right_kidney": "Right Kidney",
+    "urinary_bladder": "Urinary Bladder"
+  },
+  "nervous": {},
+  "skeletal": {},
+  "muscular": {},
+  "lymphatic": {},
+  "integumentary": {}
+}
